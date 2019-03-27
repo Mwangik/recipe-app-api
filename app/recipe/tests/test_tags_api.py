@@ -1,4 +1,4 @@
-from  django.contrib.auth import get_user_model
+from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.test import TestCase
 
@@ -10,7 +10,7 @@ from core.models import Tag
 from recipe.serializers import TagSerializer
 
 
-TAG_URL = reverse('recipe:tag-list')
+TAGS_URL = reverse('recipe:tag-list')
 
 
 class PublicTagsApiTests(TestCase):
